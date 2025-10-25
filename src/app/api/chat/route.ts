@@ -6,8 +6,8 @@
  call the Groq model, and return the assistant's response to the frontend.
 
  🧩 What to do in this file:
- Write code in the section below (marked with "!!!! ADD CHATBOT API CODE HERE !!!!") to implement the POST function to handle the request: process incoming messages,
- call `groq.chat.completions.create`, and return the assistant's reply as JSON.
+ Write code in the section below (marked with "!!!! ADD RELAVANT SEARCH CODE HERE !!!!") to 
+ implement the Search in the VectorDB. Use MongoDB vector db & Xenova/all-MiniLM-L6-v2 embedding model.
 */
 
 import { Pipeline, pipeline } from "@xenova/transformers";
