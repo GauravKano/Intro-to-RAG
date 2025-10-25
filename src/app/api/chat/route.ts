@@ -50,15 +50,18 @@ export const POST = async (req: Request) => {
     const collection = db.collection(process.env.COLLECTION_NAME!);
 
     const similarDoc = await collection
-      .find({
-        embedding: {
+      .aggregate([
+        {
           $vectorSearch: {
             queryVector: queryEmbedding,
-            k: 3,
+            path: "embedding",
+            limit: 3,
+            numCandidates: 100,
             similarity: "cosine",
+            index: "vector_index",
           },
         },
-      })
+      ])
       .toArray();
     await client.close();
 
