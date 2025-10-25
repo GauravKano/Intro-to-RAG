@@ -1,6 +1,6 @@
-# 🤖 AI@UCF - Intro to RAG Chatbot with Vector DB
+# 🤖 AI@UCF - Intro to RAG
 
-Welcome to the **Intro to RAG Chatbot** live coding session!  
+Welcome to the **Intro to RAG** live coding session!  
 This project is designed to help you build a chatbot that can **retrieve context from a MongoDB vector database** and use it with an LLM to answer questions more accurately.
 
 ---
